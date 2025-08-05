@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Theo dõi xu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Theo dõi xu</h1>
+    <form id="form">
+      <input type="date" id="date" required />
+      <input type="number" id="xu" placeholder="Nhập số xu" required />
+      <button type="submit">Thêm</button>
+    </form>
+    <div class="summary">
+      <p>Tổng xu: <span id="totalXu">0</span>k</p>
+      <p>Tổng tiền: <span id="totalTien">0k</span></p>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Ngày</th>
+          <th>Số xu</th>
+          <th>Tiền</th>
+          <th>Bonus</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
